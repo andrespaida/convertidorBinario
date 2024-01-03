@@ -1,8 +1,9 @@
 from openai import OpenAI
 
-openai = OpenAI(api_key='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')
+openai = OpenAI(api_key='none')
 
 user_input = input("Ingresa tu mensaje: ")
+#Ejemplo: "El numero 10 en binario es:"
 
 response = openai.chat.completions.create(
     model='gpt-3.5-turbo',
